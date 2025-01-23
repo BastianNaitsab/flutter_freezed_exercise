@@ -1,10 +1,10 @@
-# 🚀 Flutter Learning Project
+# 🚀 Flutter Freezed Example Project
 
 [![Flutter](https://img.shields.io/badge/Flutter-Framework-blue)](https://flutter.dev)
 ![Dart](https://img.shields.io/badge/Dart-Language-blue)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-![Screen Timer](captura.png)
+![Screen Freezed](captura.png)
 
 ## 📚 Descripción
 
@@ -39,13 +39,13 @@ lib/
 2. Clona este repositorio:
 
 ```bash
-git clone https://github.com/DevmenteSac/flutter_timer
+git clone https://github.com/BastianNaitsab/flutter_freezed_exercise
 ```
 
 3. Navega al directorio:
 
 ```bash
-cd nombre-del-repo
+cd flutter_freezed_exercise
 ```
 
 4. Instala las dependencias:
@@ -54,7 +54,15 @@ cd nombre-del-repo
 flutter pub get
 ```
 
-5. Ejecuta la aplicación:
+5. Genera el código de Freezed:
+
+Freezed utiliza generadores de código para crear las implementaciones necesarias, como los métodos `toJson()`, `fromJson()`, `copyWith()`, entre otros. Para generar este código, ejecuta el siguiente comando:
+
+```bash
+flutter pub run build_runner build
+```
+
+6. Ejecuta la aplicación:
 
 ```bash
 flutter run
@@ -65,17 +73,15 @@ flutter run
 - **Flutter SDK:** Framework
 - **Dart:** Lenguaje de Programacion
 - **VS Code:** Entorno de Desarrollo
-- **Android Studio:** Emulador
+- **Freezed:** Librería para crear clases inmutables y serializables
+
 
 ## 📖 Lo que He Aprendido
 
-- 🌟 (Añade aquí puntos clave sobre lo aprendido en este proyecto).
-
-## 📋 Próximos Pasos
-
-- Añadir autenticación.
-- Mejorar la UI/UX.
-- Implementar pruebas unitarias y funcionales.
+- 🌟 Freezed simplifica el trabajo con modelos inmutables y serializables en Flutter.
+- 🌟 Usar validaciones con `@Assert` para asegurarse de que los objetos sean válidos al momento de su creación.
+- 🌟 La conversión entre objetos, JSON y Map es mucho más sencilla utilizando Freezed.
+- 🌟 La importancia de usar métodos como `copyWith` para modificar objetos inmutables sin crear errores en el código.
 
 ## 🤝 Contribuciones
 
